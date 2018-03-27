@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 <body>
 	<div id="root">
@@ -10,12 +11,25 @@
 			</nav>
 
 			<header class="header-fadeIn">
-				<div class="header-text"></div>
-				<div class="social-links"></div>
-				<div class="learn-more"></div>	
+				<div class="header-text">This is the header text
+					<h1 class="header-main-text">Brian</h1>
+					<p class="header-additional-text">Additional info</p>
+				</div> <!-- End of Header Text -->
+
+				<div class="social-container">
+					<div class="social">
+						<p>Social Links</p>
+						<a href="github">
+						<a href="twitter">
+						<a href="gmail">
+						<a href="linkedIn">	
+					</div>
+				</div>
+
+				<div class="learn-more">Learn more</div>	
 			</header> <!--End of header-->
 
-			<div name="skills-element">
+			<div name="skills-container">
 				<section class="skills-section">
 					<h1 class="section-header">Skills</h1>
 					<p>Front End Web Development</p>
@@ -30,11 +44,11 @@
 				</section>  <!-- End of Skills Section -->
 			</div>    <!-- End of Skills Element Div -->
 
-			<div name="projects-element">
+			<div name="projects-container">
 				<section class="project-section">
 					<h1 class="section-header">Portfolio</h1>
 					<div class="projects-container">
-						<div class="project-card">
+						<div class="ind-project">
 							<div>
 								<div class="project-img-container">
 									<img class="project-photo" rc="#">
@@ -45,7 +59,7 @@
 							<a href="project link heroku">
 							<a href="project link github">
 						</div>
-						<div class="project-card">
+						<div class="ind-project">
 							<div>
 								<div class="project-img-container">
 									<img class="project-photo" rc="#">
@@ -56,7 +70,7 @@
 							<a href="project link heroku">
 							<a href="project link github">
 						</div>
-						<div class="project-card">
+						<div class="ind-project">
 							<div>
 								<div class="project-img-container">
 									<img class="project-photo" rc="#">
@@ -67,7 +81,7 @@
 							<a href="project link heroku">
 							<a href="project link github">
 						</div>
-						<div class="project-card">
+						<div class="ind-project">
 							<div>
 								<div class="project-img-container">
 									<img class="project-photo" rc="#">
@@ -78,7 +92,7 @@
 							<a href="project link heroku">
 							<a href="project link github">
 						</div>
-						<div class="project-card">
+						<div class="ind-project">
 							<div>
 								<div class="project-img-container">
 									<img class="project-photo" rc="#">
@@ -93,35 +107,35 @@
 				</section>   <!-- End of Project Section  -->
 			</div>    <!-- End of Projects Element Div -->
 
-			<div name="other-element"></div>
+			<div name="other-container"></div>
 				<section class="other-section">
-					<h1 class="section-header">Other Projects</h1>
-						<div class="other-container">
-							<div class="other-projects">
+					<h1 class="section-header underline">Other Projects</h1>
+						<div class="other-project-group">
+							<div class="project">
 								<a href="link to project">
 								<img src="#">
 								</a>
-								<div class="other-project-text">
+								<div class="project-text">
 									<a href="link to project">
 										<h3>Info about the project</h3>
 									</a>
 								</div>
 							</div>  <!-- End of single other project -->
-							<div class="other-projects">
+							<div class="project">
 								<a href="link to project">
 								<img src="#">
 								</a>
-								<div class="other-project-text">
+								<div class="project-text">
 									<a href="link to project">
 										<h3>Info about the project</h3>
 									</a>
 								</div>
 							</div>  <!-- End of single other project -->
-							<div class="other-projects">
+							<div class="project">
 								<a href="link to project">
 								<img src="#">
 								</a>
-								<div class="other-project-text">
+								<div class="project-text">
 									<a href="link to project">
 										<h3>Info about the project</h3>
 									</a>
