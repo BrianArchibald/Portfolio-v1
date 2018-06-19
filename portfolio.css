@@ -7,6 +7,16 @@ body {
 	margin: 0;
 }
 
+.fa {
+	display: inline-block;
+    font-size: 14px;
+    font-style: normal;
+    font-family: FontAwesome;
+    text-rendering: auto;
+    
+}
+
+
 /*  ------   Nav Bar -------  */
 
 .nav-sticky {
