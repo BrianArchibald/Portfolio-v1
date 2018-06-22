@@ -109,15 +109,17 @@ h3 {
 	font-size: 1.2em;
 }
 
-.social-links {
+.social-links{
 	display: flex;
 	justify-content: center;
 	margin-bottom: 1em;
 	margin-top: 1em;
+	text-decoration: none;
 }
-.social-link {
-	font-size: 2.5em;
+.fas, .fab {
+	font-size: 1.5em;
 	margin: 0 .5em;
+	text-decoration: none;
 }
 
 
@@ -129,7 +131,7 @@ h3 {
 	display: block;
 }
 .skills-section {
-	width: 100%
+	width: 100%;
 	padding-top: 4vh;
 	padding-bottom: 7vh;
 	background-color: #a6d3a0;
@@ -146,6 +148,7 @@ h3 {
 	max-width: 600px;
 	padding: 0 5%;
 	color: #fff;
+	text-align: center;
 }
 .skills {
 	list-style-type: none;
@@ -205,11 +208,13 @@ h3 {
 	line-height: 1.4em;
 }
 .project-img-container {
+	
 	width: 80%;
 	height: 20vw;
 	overflow: hidden;
 }
 .project-photo {
+
 	height: 300px;
 	width: 300px;
 }
