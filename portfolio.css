@@ -9,7 +9,7 @@ body {
 
 .fa {
 	display: inline-block;
-    font-size: 14px;
+    font-size: 10px;
     font-style: normal;
     font-family: FontAwesome;
     text-rendering: auto;
@@ -19,6 +19,10 @@ body {
 h1 {
 	font-size: 2em;
 	margin: .67em 0;
+}
+
+a:visited {
+	color: blue;
 }
 
 
@@ -36,6 +40,19 @@ h1 {
 	width: 100%
 }
 
+.nav-sticky v2 {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	background-color: blue;
+	position: sticky;
+	top: 0;
+	padding: .2em 3em;
+	margin: 0;
+	z-index: 100;
+	width: 100%
+
+}
+
 .nav-list {
 	list-style-type: none;
 	display: grid;
@@ -44,6 +61,16 @@ h1 {
 	margin: 1em 0;
 	font-size: 1.3em;
 	color: blue;
+}
+
+.nav-list v2 {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	padding: 0;
+	margin: 0.75em 0;
+	font-size: 1em;
+	color: grey;
 }
 
 #nav-logo {
@@ -56,6 +83,23 @@ h1 {
 	cursor: pointer;
 	color: blue;
 }
+
+#nav-logo v2 {
+	font-size: 1.3em;
+	display: inline-block;
+	border: 2px solid blue;
+	border-radius: 50%;
+	padding: .2em;
+	margin: .2em 0;
+	cursor: pointer;
+	color: white;
+}
+
+.nav-active {
+	text-decoration: none;
+}
+
+
 
 /*  ------  Header  -------  */
 
@@ -117,8 +161,12 @@ h3 {
 	text-decoration: none;
 }
 .fas, .fab {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	margin: 0 .5em;
+	text-decoration: none;
+}
+
+.social a {
 	text-decoration: none;
 }
 
@@ -141,6 +189,7 @@ h3 {
 	display: inline-block;
 	padding: .2em
 	border-bottom: 3px solid #fff;
+	text-align: center;
 }
 
 .skills-section p {
@@ -155,6 +204,7 @@ h3 {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	text-align: center;
 	padding-left: 5%;
 	padding-right: 5%;
 	margin: 0 auto;
