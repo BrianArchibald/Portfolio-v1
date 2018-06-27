@@ -26,10 +26,6 @@ a:visited {
 	color: blue;
 }
 
-a:visited {
-	color: blue;
-}
-
 
 /*  ------   Nav Bar -------  */
 
@@ -50,19 +46,6 @@ a:visited {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	background-color: #edf2f9;
-	position: sticky;
-	top: 0;
-	padding: .2em 3em;
-	margin: 0;
-	z-index: 100;
-	width: 100%
-
-}
-
-.nav-sticky v2 {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	background-color: blue;
 	position: sticky;
 	top: 0;
 	padding: .2em 3em;
@@ -103,16 +86,6 @@ a:visited {
 	color: green;
 }
 
-.nav-list v2 {
-	list-style-type: none;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	padding: 0;
-	margin: 0.75em 0;
-	font-size: 1em;
-	color: grey;
-}
-
 #nav-logo {
 	font-size: 1.8em;
 	display: inline-block;
@@ -124,26 +97,15 @@ a:visited {
 	color: blue;
 }
 
-<<<<<<< HEAD
 .nav-sticky-v2 #nav-logo {
 	font-size: 1.3em;
 	display: inline-block;
 	border: 2px solid grey;
-=======
-#nav-logo v2 {
-	font-size: 1.3em;
-	display: inline-block;
-	border: 2px solid blue;
->>>>>>> 8633225c822b256a112286bb5a3c7ed67f753adc
 	border-radius: 50%;
 	padding: .2em;
 	margin: .2em 0;
 	cursor: pointer;
-<<<<<<< HEAD
 	color: green;
-=======
-	color: white;
->>>>>>> 8633225c822b256a112286bb5a3c7ed67f753adc
 }
 
 .nav-active {
@@ -216,10 +178,6 @@ h3 {
 	margin: 0 .5em;
 	text-decoration: none;
 	color: white;
-}
-
-.social a {
-	text-decoration: none;
 }
 
 .social a {
