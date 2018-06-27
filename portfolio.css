@@ -9,7 +9,7 @@ body {
 
 .fa {
 	display: inline-block;
-    font-size: 14px;
+    font-size: 10px;
     font-style: normal;
     font-family: FontAwesome;
     text-rendering: auto;
@@ -19,6 +19,11 @@ body {
 h1 {
 	font-size: 2em;
 	margin: .67em 0;
+	text-align: center;
+}
+
+a:visited {
+	color: blue;
 }
 
 
@@ -33,17 +38,52 @@ h1 {
 	padding: .5em 4em;
 	margin: 0;
 	z-index: 100;
+	width: 100%;
+	transition: all 1s;
+}
+
+.nav-sticky-v2 {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	background-color: #edf2f9;
+	position: sticky;
+	top: 0;
+	padding: .2em 3em;
+	margin: 0;
+	z-index: 100;
 	width: 100%
+
 }
 
 .nav-list {
 	list-style-type: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
 	padding: 0;
 	margin: 1em 0;
 	font-size: 1.3em;
-	color: blue;
+
+}
+
+
+.nav-sticky-v2 .nav-list {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	padding: 0;
+	margin: 0.75em 0;
+	font-size: 1em;
+	color: grey;
+}
+
+.nav-list a {
+	color: white;
+}
+
+.nav-sticky-v2 a {
+	color: green;
 }
 
 #nav-logo {
@@ -56,6 +96,23 @@ h1 {
 	cursor: pointer;
 	color: blue;
 }
+
+.nav-sticky-v2 #nav-logo {
+	font-size: 1.3em;
+	display: inline-block;
+	border: 2px solid grey;
+	border-radius: 50%;
+	padding: .2em;
+	margin: .2em 0;
+	cursor: pointer;
+	color: green;
+}
+
+.nav-active {
+	text-decoration: none;
+}
+
+
 
 /*  ------  Header  -------  */
 
@@ -77,13 +134,13 @@ h1 {
 .header-main-text {
 	font-size: 2em;
 	font-family: sans-serif;
-	color: grey;
+	color: white;
 }
 .header-additional-text {
 	font-size: 1.2em;
 	line-height: 1.4em;
 	margin: 5% 0 15% 0;
-	color: grey;
+	color: white;
 }
 
 
@@ -117,8 +174,13 @@ h3 {
 	text-decoration: none;
 }
 .fas, .fab {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	margin: 0 .5em;
+	text-decoration: none;
+	color: white;
+}
+
+.social a {
 	text-decoration: none;
 }
 
@@ -141,6 +203,7 @@ h3 {
 	display: inline-block;
 	padding: .2em
 	border-bottom: 3px solid #fff;
+	text-align: center;
 }
 
 .skills-section p {
@@ -155,6 +218,7 @@ h3 {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	text-align: center;
 	padding-left: 5%;
 	padding-right: 5%;
 	margin: 0 auto;
@@ -209,17 +273,25 @@ h3 {
 }
 .project-img-container {
 	
-	width: 80%;
+	width: 100%;
 	height: 20vw;
 	overflow: hidden;
 }
 .project-photo {
-
+	padding: 2em;
 	height: 300px;
 	width: 300px;
 }
 .ind-project p {
 	padding: 0 8%;
+}
+
+.project-img-container p {
+	text-align: center;
+}
+
+.project-img-container h1 {
+	text-align: center;
 }
 
 
