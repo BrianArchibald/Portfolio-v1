@@ -35,9 +35,12 @@ a {
 .nav-sticky {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
-	background-color: #4d243d;
+
 	/*
-	background-color: #bbbec1;
+	background-color: #4d243d;
+	
+	
+
 	*/
 	position: sticky;
 	top: 0;
@@ -52,9 +55,7 @@ a {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	background-color: #e9e9e9;
-	/*
-	background-color: #edf2f9;
-	*/
+
 	position: sticky;
 	top: 0;
 	padding: .2em 3em;
@@ -138,12 +139,20 @@ a {
 
 
 .header {
-	background-color: #4d243d;
 	/*
-	background-color: #bbbec1;
-	*/
+	background-color: #4d243d;
 	height: 90vh;
 	padding: 10%;
+	*/
+	
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(laptop.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+
+	
+	
 	color: white;
 	display: flex;
 	flex-direction: column;
