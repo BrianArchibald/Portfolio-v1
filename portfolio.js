@@ -1,17 +1,58 @@
 const nav = document.querySelector('.nav-sticky');
+const socialContainer = document.querySelector('#socialContainer');
+const navTop = nav.offsetTop;
 
-function scrolledNav () {
-	if (window.scrollY > 0) {
-		document.getElementById("navSticky").classList.add("nav-sticky-v2");
-	}
-	else {
-		document.getElementById("navSticky").classList.remove("nav-sticky-v2");
-	}
+// function scrolledNav () {
+
+
+// }
+
+// window.addEventListener('scroll', stickyElement);
+
+	// console.log(socialContainer.scrollTop);
+	// if (socialContainer.scrollTop > 0) {
+	// 	document.getElementById("navSticky").classList.add("nav-sticky-v2");
+	// } else {
+	// 	document.getElementById("navSticky").classList.remove("nav-sticky-v2");
+	// 	}
+	// }
+
+	//   console.log('navTop = ' + navTop);
+	//   console.log('scrollY = ' + window.scrollY);
+
+
+
+
+	// 	if (window.scrollY > 800) {
+	// 		//if (window.scrollY > 0)
+	// 		document.getElementById("navSticky").classList.add("nav-sticky-v2");
+	// 	}
+	// 	else {
+	// 		document.getElementById("navSticky").classList.remove("nav-sticky-v2");
+	// 	}
+	// }
+
+//window.addEventListener('scroll', scrolledNav);
+
+
+
+
+function stickyElement(e) {
+  
+  var header = document.querySelector('.header');
+  var headerHeight = getComputedStyle(header).height.split('px')[0];
+  var navbar = document.querySelector('.nav-sticky');  
+  var scrollValue = window.scrollY;
+  
+  if (scrollValue > headerHeight) {
+    navbar.classList.add('nav-sticky-v2');
+    
+  } else if (scrollValue < headerHeight) {
+    navbar.classList.remove('nav-sticky-v2');
+    
+  }
 }
-
-window.addEventListener('scroll', scrolledNav);
-
-
+  window.addEventListener('scroll', stickyElement);
 
 
 // will run checkSlide every 20ms so checkSlide is not running constantly
