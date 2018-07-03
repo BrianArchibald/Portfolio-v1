@@ -42,7 +42,7 @@ function stickyElement(e) {
   var header = document.querySelector('.header');
   var headerHeight = getComputedStyle(header).height.split('px')[0];
   var navbar = document.querySelector('.nav-sticky');  
-  var scrollValue = window.scrollY;
+  var scrollValue = window.scrollY + 45;
   
   if (scrollValue > headerHeight) {
     navbar.classList.add('nav-sticky-v2');
@@ -76,12 +76,12 @@ const slideProjects = document.querySelectorAll('.projects');
 
 function checkSlide() {     
 	 for (var i=0; i<slideUpBoxes.length; i++) {
-	 	if (window.scrollY > 220) {
+	 	if (window.scrollY > 390) {
 	 		slideUpBoxes[i].classList.add('activeSkills');
 	 	}
 	  }
 	  for (var i=0; i<slideProjects.length; i++) {
-	  	if (window.scrollY > 670) {
+	  	if (window.scrollY > 890) {
 	  		slideProjects[i].classList.add('projectActive');
 	  	}
 	  }

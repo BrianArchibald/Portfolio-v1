@@ -54,7 +54,7 @@ a {
 .nav-sticky-v2 {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
-	background-color: #e9e9e9;
+	background-color: #333333;
 
 	position: fixed;
 	top: 0;
@@ -86,7 +86,7 @@ a {
 	padding: 0;
 	margin: 0.75em 0;
 	font-size: 1.2em;
-	color: #4d243d;
+	color: white;
 }
 
 .nav-list a {
@@ -94,7 +94,7 @@ a {
 }
 
 .nav-sticky-v2 a {
-	color: #4d243d;
+	color: white;
 }
 
 .nav-sticky-v2 a:hover {
@@ -122,12 +122,12 @@ a {
 .nav-sticky-v2 #nav-logo {
 	font-size: 1.3em;
 	display: inline-block;
-	border: 2px solid #d0a98f;
+	border: 2px solid white;
 	border-radius: 50%;
 	padding: .2em;
 	margin: .2em 0;
 	cursor: pointer;
-	color: #4d243d;
+	color: white;
 }
 
 .nav-active {
@@ -228,7 +228,7 @@ h3 {
 }
 .skills-section {
 	width: 100%;
-	padding-top: 4vh;
+	padding-top: 18vh;
 	padding-bottom: 7vh;
 
 	/*
@@ -418,10 +418,10 @@ h3 {
 
 .about-section {
 	display: grid;
-	grid-template-rows: 1fr 3fr 3fr;
-	background: #ecdcc9;
-	padding: 5vh;
-	color: black;
+	grid-template-rows: 1fr 2fr 2fr;
+	background: #374c7a;
+	padding: 10vh;
+	color: white;
 }
 
 .about-section img {
@@ -445,7 +445,7 @@ h3 {
 /* ---   Footer --- */
 
 .footer {
-	background-color: #4d243d;
+	background-color: #333333;
 	padding-top: 1em;
 	padding-bottom: .5em;
 	color: #fff;
