@@ -119,6 +119,20 @@ a {
 	color: white;
 }
 
+.navLogo {
+	align-self: center;
+}
+
+.navLogo img {
+	/*
+	height: 30px;
+	width: 75px;
+	*/
+	height: 1.9em;
+	width: 5.3em;
+
+}
+
 .nav-sticky-v2 #nav-logo {
 	font-size: 1.3em;
 	display: inline-block;
