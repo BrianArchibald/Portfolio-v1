@@ -473,13 +473,126 @@ h3 {
 }
 
 @media only screen and (max-width: 1023px) {  /*iPad in landscapte mode has 1024px */
+	.nav-list li {
+		padding: 0 1em;
+	}
 
 }
 
 @media only screen and (max-width: 767px) { /* phones smaller than iPad */
+	.nav-list {
+		font-size: 1.7em;
+	}
+	.nav-sticky-v2 .nav-list {
+		font-size: 1.7em;
+	}
+	.header-main-text {
+		font-size: 3em;
+	}
+	.header-additional-text {
+		font-size: 1.9em;
+	}
+	.fas .fab {
+		font-size: 2em;
+	}
+	.section-header {
+		font-size: 3em;
+	}
+	.skills-section p {
+		font-size: 1.9em;
+	}
+	.skills {
+		font-size: 5.5em;
+	}
 
 }
 
+
+@media only screen and (max-width: 650px) { /* phones smaller than iPad */
+	.nav-list {
+		font-size: 2em;
+	}
+	.nav-sticky-v2 .nav-list {
+		font-size: 2em;
+	}
+	.header-main-text {
+		font-size: 3.8em;
+	}
+	.header-additional-text {
+		font-size: 2.4em;
+	}
+	.fas .fab {
+		font-size: 2em;
+	}
+	.section-header {
+		font-size: 3.7em;
+	}
+	.skills-section p {
+		font-size: 2.3em;
+	}
+	.skills {
+		font-size: 5.9em;
+	}
+	.projects-container {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.project-img-container {
+		height: 80vw;
+	}
+	.project-img-container h1{
+		font-size: 4em;
+	}
+	.ind-project p {
+		font-size: 2em;
+	}
+	.link-container a {
+		font-size: 1.5em;
+	}
+}
+
 @media only screen and (max-width: 480px) {  /* will apply to screens 480 and smaller (small phones) */
-		
+	.nav-list {
+		font-size: 2.2em;
+	}
+	.nav-sticky-v2 .nav-list {
+		font-size: 2.2em;
+	}
+	.header-main-text {
+		font-size: 3.8em;
+	}
+	.header-additional-text {
+		font-size: 2.4em;
+	}
+	.fas .fab {
+		font-size: 2em;
+	}
+	.section-header {
+		font-size: 5em;
+	}
+	.skills-section p {
+		font-size: 2.3em;
+	}
+	.skills {
+		font-size: 7em;
+	}
+	.projects-container {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.project-img-container {
+		height: 80vw;
+	}
+	.project-img-container h1{
+		font-size: 4em;
+	}
+	.ind-project p {
+		font-size: 2em;
+	}
+	.link-container a {
+		font-size: 1.5em;
+	}
+	.project {
+		width: 100%;
+	}
 }
