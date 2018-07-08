@@ -472,14 +472,13 @@ h3 {
 	text-align: center;
 }
 
-@media only screen and (max-width: 1023px) {  /*iPad in landscapte mode has 1024px */
+@media (max-width: 1023px) {  /*iPad in landscape mode has 1024px */
 	.nav-list li {
 		padding: 0 1em;
 	}
-
 }
 
-@media only screen and (max-width: 767px) { /* phones smaller than iPad */
+@media (max-width: 767px) { /* phones smaller than iPad */
 	.nav-list {
 		font-size: 1.7em;
 	}
@@ -504,11 +503,10 @@ h3 {
 	.skills {
 		font-size: 5.5em;
 	}
-
 }
 
 
-@media only screen and (max-width: 650px) { /* phones smaller than iPad */
+@media (max-width: 650px) { /* phones smaller than iPad */
 	.nav-list {
 		font-size: 2em;
 	}
@@ -551,7 +549,7 @@ h3 {
 	}
 }
 
-@media only screen and (max-width: 480px) {  /* will apply to screens 480 and smaller (small phones) */
+@media (max-width: 480px) {  /* will apply to screens 480 and smaller (small phones) */
 	.nav-list {
 		font-size: 2.2em;
 	}
