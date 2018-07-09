@@ -242,7 +242,7 @@ h3 {
 }
 .skills-section {
 	width: 100%;
-	padding-top: 18vh;
+	padding-top: 30vh;
 	padding-bottom: 7vh;
 
 	/*
@@ -634,19 +634,27 @@ h3 {
 		padding-top: 0;
 		margin-top: -7vh;
 	}
+	.navLogo {
+		margin-left: -6vh;
+	}
 
 	.nav-list {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding: .5em 1em;
 		font-size: .9em;
 	}
 	.nav-sticky-v2 {
 		padding-top: 0;
 		margin-top: 0 !important;
+		max-height: 12vw;
 	}
+	.nav-sticky-v2 .navLogo {
+		margin-left: -5vh;
+	}
+	
 
 	.nav-sticky-v2 .nav-list {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding: .5em 1em;
 		font-size: .9em;
 	}
