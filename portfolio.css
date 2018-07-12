@@ -37,8 +37,7 @@ a {
 	grid-template-columns: 2fr 1fr;
 
 	/*
-	background-color: #4d243d;
-	position: sticky;
+	padding: .5em 4em;
 	
 	*/
 	
@@ -58,7 +57,10 @@ a {
 
 	position: fixed;
 	top: 0;
-	padding: .2em 3em;
+	padding: .2em 0;
+	/*
+	padding: .2em 0;
+	*/
 	margin: 0;
 	z-index: 100;
 	width: 100%;
@@ -472,6 +474,19 @@ h3 {
 	text-align: center;
 }
 
+
+/*       Media Queries     */
+
+@media (max-width: 1230px) {
+	.nav-list li {
+		padding: 0 2em;
+	}
+	.nav-sticky-v2 .navLogo {
+		padding-left: 4em;
+	}
+}
+
+
 @media (max-width: 1023px) {  /*iPad in landscape mode has 1024px */
 	.nav-list li {
 		padding: 0 1em;
@@ -506,16 +521,16 @@ h3 {
 }
 
 
-@media (max-width: 650px) { /* phones smaller than iPad */
+@media (max-width: 726px) { /* phones smaller than iPad (max-width: 650px)  */
 	.nav-sticky {
 		padding-top: 0;
-		margin-top: -7vh;
+		margin-top: -5vh;
 	}
 
 	.nav-list {
 		grid-template-columns: 1fr  1fr 1fr 1fr;
 		padding: .5em 1em;
-		font-size: 1.2em;
+		font-size: 1.5em;
 	}
 	.nav-sticky-v2 {
 		padding-top: 0;
@@ -525,7 +540,7 @@ h3 {
 	.nav-sticky-v2 .nav-list {
 		grid-template-columns: 1fr  1fr 1fr 1fr;
 		padding: .5em 1em;
-		font-size: 1.2em;
+		font-size: 1.5em;
 	}
 	.header {
 		margin-bottom: -5vh;
@@ -534,36 +549,126 @@ h3 {
 		margin-top: -5vh;
 	}
 	.header-main-text {
-		font-size: 2em;
+		font-size: 3em;
 		padding: 0 0 40px 0;
 	}
 	.header-additional-text {
-		font-size: 1.2em;
+		font-size: 1.7em;
 	}
 	.fas .fab {
 		font-size: 2em;
 	}
 	.section-header {
-		font-size: 1.7em;
+		font-size: 2.7em;
 	}
 	.skills-section {
 		padding-top: 35vh;
 	}
 	.skills-section p {
-		font-size: 1.1em;
+		font-size: 1.7em;
 
 	}
 	.skills {
-		font-size: 2.3em;
+		font-size: 3.9em;
 		padding-right: 0;
 		padding-left: 0;
 	}
 	.projects-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		grid-gap: 0px;
 	}
 	.project-img-container {
 		height: 50vw;
+	}
+	.project-img-container h1{
+		font-size: 4em;
+	}
+	.ind-project {
+		margin: -2.5vh;
+	}
+	.ind-project p {
+		font-size: 1.1em;
+	}
+	.link-container a {
+		font-size: 1.5em;
+	}
+	.project {
+		width: 100%;
+	}
+	.about-section {
+		padding: 2vh;
+	}
+}
+
+
+
+@media (max-width: 703px) {
+	.nav-sticky {
+		padding-top: 0;
+		margin-top: -7vh;
+	}
+	.navLogo {
+		margin-left: -6vh;
+	}
+	
+	.nav-list {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: .5em 1em;
+		font-size: 1.4em;
+		padding-left: 12vh;
+	}
+	.nav-sticky-v2 {
+		padding-top: 0;
+		margin-top: 0 !important;
+		max-height: 12vw;
+	}
+	.nav-sticky-v2 .navLogo {
+		margin-left: -5vh;
+	}
+	.nav-sticky-v2 .nav-list {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: .5em 1em;
+		font-size: 1.4em;
+	}
+	.header {
+		margin-bottom: -5vh;
+	}
+	.header-text {
+		margin-top: -5vh;
+	}
+	.header-main-text {
+		font-size: 3em;
+		margin: -20px;
+		padding: 0 0 40px 0;
+	}
+	.header-additional-text {
+		font-size: 1.7em;
+	}
+	.fas .fab {
+		font-size: 2em;
+	}
+	.section-header {
+		font-size: 3em;
+	}
+	.skills-section {
+		padding-top: 29vh;
+	}
+	.skills-section p {
+		font-size: 1.7em;
+
+	}
+	.skills {
+		font-size: 3.9em;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.projects-container {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.project-img-container {
+		height: 80vw;
 	}
 	.project-img-container h1{
 		font-size: 4em;
@@ -583,50 +688,11 @@ h3 {
 }	
 
 
-/*
-	.nav-list {
-		font-size: 2em;
-	}
-	.nav-sticky-v2 .nav-list {
-		font-size: 2em;
-	}
-	.header-main-text {
-		font-size: 3.8em;
-		margin-top: -20px;
-	}
-	.header-additional-text {
-		font-size: 2.4em;
-	}
-	.fas .fab {
-		font-size: 2em;
-	}
-	.section-header {
-		font-size: 3.7em;
-	}
-	.skills-section p {
-		font-size: 2.3em;
-	}
-	.skills {
-		font-size: 5.9em;
-	}
-	.projects-container {
-		display: grid;
-		grid-template-columns: 1fr;
-	}
-	.project-img-container {
-		height: 80vw;
-	}
-	.project-img-container h1{
-		font-size: 4em;
-	}
-	.ind-project p {
-		font-size: 2em;
-	}
-	.link-container a {
-		font-size: 1.5em;
-	}
-}
-*/
+
+
+
+/* copied 570 to 670 due to weird right margin issue */
+
 
 @media (max-width: 570px) {
 	.nav-sticky {
@@ -654,8 +720,6 @@ h3 {
 	.nav-sticky-v2 .navLogo {
 		margin-left: -5vh;
 	}
-	
-
 	.nav-sticky-v2 .nav-list {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding: .5em 1em;
