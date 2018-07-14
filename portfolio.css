@@ -31,7 +31,7 @@ a {
 	text-decoration: none;
 }
 
-/*  ------   Nav Bar -------  */
+/*  ------ First Nav Bar -------  */
 
 .nav-sticky {
 	display: grid;
@@ -52,6 +52,9 @@ a {
 	width: 100%;
 	transition: all 1s;
 }
+
+
+/*  Second Sticky Nav  */
 
 .nav-sticky-v2 {
 	display: grid;
@@ -80,7 +83,7 @@ a {
 
 }
 
-#menu-icon {
+.mobile-nav-icon {
 	display: none;
 }
 
@@ -156,6 +159,18 @@ a {
 
 .nav-active {
 	text-decoration: none;
+}
+
+
+/*  Mobile Nav Icon   */
+
+.mobile-nav-icon {
+	cursor: pointer;
+	
+}
+
+#menu-icon {
+	font-size: 3vh;
 }
 
 
@@ -733,8 +748,8 @@ h3 {
 		margin-left: 0;
 	}
 	.navLogo img {
-		height: 1.3em;
-		width: 3.3em;
+		height: 1em;
+		width: 3em;
 	}
 
 	.nav-list {
@@ -837,13 +852,15 @@ h3 {
 		margin-left: 0;
 	}
 	.navLogo img {
-		height: 1.3em;
-		width: 3.3em;
+		height: 1em;
+		width: 3em;
 	}
 
 	.nav-list {
 
-		display: none;
+		display: block;
+		padding-top: 2vh;
+    	margin-top: 0;
 		/*
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		
@@ -856,8 +873,25 @@ h3 {
 
 	.navList {
 		display: grid;
-		grid-template-columns: 1fr
+		grid-template-columns: 1fr 1fr;
 	}
+	.nav-list a {
+	    color: white;
+	    font-weight: 200;
+	}
+	.nav-list li {
+    padding: .2em 1em;
+	}
+
+	.mobile-nav-icon {
+		display: inline-block;
+		align-self: center;
+    	justify-self: end;
+    	margin-right: 3vh;
+
+	}
+
+	/*
 	#menu-icon {
 		display: inline-block;
 	    font-size: 3vh;
@@ -865,6 +899,8 @@ h3 {
     	justify-self: end;
     	margin-right: 3vh;
 	}
+
+	*/
 
 	.nav-sticky-v2 {
 		padding-top: 0;
