@@ -80,8 +80,8 @@ a {
 
 }
 
-.fa-bars {
-	display: none !important;
+#menu-icon {
+	display: none;
 }
 
 
@@ -502,7 +502,7 @@ h3 {
 		font-size: 3.9em;
 	}
 	.about-section img {
-		width: 40%;
+		width: 50vh;
 		padding: 5vh;
 	}
 	.summary {
@@ -789,9 +789,9 @@ h3 {
 		padding-left: 0;
 	}
 	.project {
-		display: grid;
-		grid-template-rows: 1fr 2fr;
-		grid-template-columns: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.projects-container {
 		display: grid;
@@ -799,13 +799,14 @@ h3 {
 	}
 	.project-img-container {
 		
-		height: 80vw;
+		height: 50vw;
 	}
 	.project-img-container h1{
 		font-size: 4em;
 	}
 	.project-text {
 		font-size: 1.5em;
+		text-align: center;
 		
 		
 	}
@@ -815,6 +816,11 @@ h3 {
 	.link-container a {
 		font-size: 1.5em;
 	}
+
+	.project img {
+		width: 35vh;
+    	height: 35vh;
+	}
 	
 	.about-section {
 		padding: 2vh;
@@ -822,13 +828,13 @@ h3 {
 }	
 
 
-@media (max-width: 480px) {  /* will apply to screens 480 and smaller (small phones) */
+@media (max-width: 517px) {  /* will apply to screens 480 and smaller (small phones) */
 	.nav-sticky {
 		padding-top: 0;
 		margin-top: -7vh;
 	}
 	.navLogo {
-		margin-left: -6vh;
+		margin-left: 0;
 	}
 	.navLogo img {
 		height: 1.3em;
@@ -847,10 +853,17 @@ h3 {
 		font-size: 1.2em;
 		*/
 	}
-	.fa-bars {
+
+	.navList {
+		display: grid;
+		grid-template-columns: 1fr
+	}
+	#menu-icon {
 		display: inline-block;
-		font-size: 3vh;
-		font-weight: 900;
+	    font-size: 3vh;
+	    align-self: center;
+    	justify-self: end;
+    	margin-right: 3vh;
 	}
 
 	.nav-sticky-v2 {
@@ -859,7 +872,7 @@ h3 {
 		max-height: 12vw;
 	}
 	.nav-sticky-v2 .navLogo {
-		margin-left: -5vh;
+		margin-left: 0;
 	}
 	
 
@@ -879,12 +892,12 @@ h3 {
 		margin-top: -5vh;
 	}
 	.header-main-text {
-		font-size: 2em;
+		font-size: 2.6em;
 		margin: -20px;
 		padding: 0 0 40px 0;
 	}
 	.header-additional-text {
-		font-size: 1.2em;
+		font-size: 1.4em;
 	}
 	.fas .fab {
 		font-size: 2em;
@@ -900,7 +913,7 @@ h3 {
 
 	}
 	.skills {
-		font-size: 2.3em;
+		font-size: 3.3em;
 		padding-right: 0;
 		padding-left: 0;
 	}
