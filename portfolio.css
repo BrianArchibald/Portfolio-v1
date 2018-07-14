@@ -16,6 +16,7 @@ body {
     
 }
 
+
 h1 {
 	font-size: 2em;
 	margin: .67em 0;
@@ -77,6 +78,10 @@ a {
 	margin: 1em 0;
 	font-size: 1.3em;
 
+}
+
+.fa-bars {
+	display: none !important;
 }
 
 
@@ -485,14 +490,32 @@ h3 {
 @media (max-width: 1230px) {
 	.nav-list li {
 		padding: 0 2em;
-	}
-	
+	}	
 }
 
 
 @media (max-width: 1023px) {  /*iPad in landscape mode has 1024px */
 	.nav-list li {
 		padding: 0 1em;
+	}
+	.skills {
+		font-size: 3.9em;
+	}
+	.about-section img {
+		width: 40%;
+		padding: 5vh;
+	}
+	.summary {
+		font-size: 1.2em;
+	}
+	.projects-container {
+		grid-gap: 0;
+	}
+	.ind-project p {
+		font-size: 1.2em;
+	}
+	.link-container {
+		font-size: 1.2em;
 	}
 }
 
@@ -502,6 +525,10 @@ h3 {
 	}
 	.nav-sticky-v2 .nav-list {
 		font-size: 1.7em;
+	}
+	.nav-sticky-v2 .navLogo img {
+	    height: 1.4em;
+	    width: 3.5em;
 	}
 	.header-main-text {
 		font-size: 3em;
@@ -612,7 +639,7 @@ h3 {
 		margin-top: -7vh;
 	}
 	.navLogo {
-		margin-left: -6vh;
+		margin-left: 2vh;
 	}
 	
 	.nav-list {
@@ -627,7 +654,7 @@ h3 {
 		max-height: 12vw;
 	}
 	.nav-sticky-v2 .navLogo {
-		margin-left: -5vh;
+		margin-left: 2vh;
 	}
 	.nav-sticky-v2 .nav-list {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -676,6 +703,9 @@ h3 {
 	.project-img-container h1{
 		font-size: 4em;
 	}
+	.ind-project {
+		max-width: 65vh;
+	}
 	.ind-project p {
 		font-size: 1.1em;
 	}
@@ -688,22 +718,19 @@ h3 {
 	.about-section {
 		padding: 2vh;
 	}
+	.about-section img {
+		width: 67%;
+	}
 }	
 
 
-
-
-
-/* copied 570 to 670 due to weird right margin issue */
-
-
-@media (max-width: 570px) {
+@media (max-width: 592px) {
 	.nav-sticky {
 		padding-top: 0;
 		margin-top: -7vh;
 	}
 	.navLogo {
-		margin-left: -6vh;
+		margin-left: 0;
 	}
 	.navLogo img {
 		height: 1.3em;
@@ -712,8 +739,8 @@ h3 {
 
 	.nav-list {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		padding: .5em 1em;
-		font-size: .9em;
+		padding: .5em 0em;
+		font-size: 1.2em;
 	}
 	.nav-sticky-v2 {
 		padding-top: 0;
@@ -721,12 +748,12 @@ h3 {
 		max-height: 12vw;
 	}
 	.nav-sticky-v2 .navLogo {
-		margin-left: -5vh;
+		margin-left: -0;
 	}
 	.nav-sticky-v2 .nav-list {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		padding: .5em 1em;
-		font-size: .9em;
+		padding: .5em 0em;
+		font-size: 1.2em;
 	}
 	.header {
 		margin-bottom: -5vh;
@@ -735,34 +762,35 @@ h3 {
 		margin-top: -5vh;
 	}
 	.header-main-text {
-		font-size: 2em;
+		font-size: 2.5em;
 		margin: -20px;
 		padding: 0 0 40px 0;
 	}
 	.header-additional-text {
-		font-size: 1.2em;
+		font-size: 1.7em;
+		margin: 0;
 	}
-	.fas .fab {
-		font-size: 2em;
+	.fab {
+		font-size: 1.6em;
 	}
 	.section-header {
-		font-size: 1.7em;
+		font-size: 2.7em;
 	}
 	.skills-section {
-		padding-top: 15vh;
+		padding-top: 29vh;
 	}
 	.skills-section p {
-		font-size: 1.1em;
+		font-size: 1.6em;
 
 	}
 	.skills {
-		font-size: 3.3em;
+		font-size: 4em;
 		padding-right: 0;
 		padding-left: 0;
 	}
 	.project {
 		display: grid;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 1fr 2fr;
 		grid-template-columns: 0;
 	}
 	.projects-container {
@@ -770,14 +798,19 @@ h3 {
 		grid-template-columns: 1fr;
 	}
 	.project-img-container {
-		display: grid;
+		
 		height: 80vw;
 	}
 	.project-img-container h1{
 		font-size: 4em;
 	}
+	.project-text {
+		font-size: 1.5em;
+		
+		
+	}
 	.ind-project p {
-		font-size: 1.1em;
+		font-size: 1.4em;
 	}
 	.link-container a {
 		font-size: 1.5em;
@@ -803,13 +836,23 @@ h3 {
 	}
 
 	.nav-list {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+
+		display: none;
 		/*
-		padding: .5em 1em;
-		*/
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		
+		
+		
 		padding: .5em 0em;
-		font-size: .9em;
+		font-size: 1.2em;
+		*/
 	}
+	.fa-bars {
+		display: inline-block;
+		font-size: 3vh;
+		font-weight: 900;
+	}
+
 	.nav-sticky-v2 {
 		padding-top: 0;
 		margin-top: 0 !important;
@@ -821,12 +864,13 @@ h3 {
 	
 
 	.nav-sticky-v2 .nav-list {
+		display: none;
+		/*
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding: .5em 0em;
-		/*
-		padding: .5em 1em;
-		*/
 		font-size: .9em;
+
+		*/
 	}
 	.header {
 		margin-bottom: -5vh;
