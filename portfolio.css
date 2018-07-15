@@ -863,9 +863,6 @@ h3 {
     	margin-top: 0;
 		/*
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		
-		
-		
 		padding: .5em 0em;
 		font-size: 1.2em;
 		*/
@@ -910,17 +907,49 @@ h3 {
 	.nav-sticky-v2 .navLogo {
 		margin-left: 0;
 	}
-	
+
+
+
+
+
 
 	.nav-sticky-v2 .nav-list {
-		display: none;
+
+		display: block;
+		padding-top: 2vh;
+    	margin-top: 0;
 		/*
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding: .5em 0em;
-		font-size: .9em;
-
+		font-size: 1.2em;
 		*/
 	}
+
+	.nav-sticky-v2 .navList {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.nav-sticky-v2 .nav-list a {
+	    color: white;
+	    font-weight: 200;
+	}
+	.nav-sticky-v2 .nav-list li {
+    padding: .2em 1em;
+	}
+
+	.nav-sticky-v2 .mobile-nav-icon {
+		display: inline-block;
+		align-self: center;
+    	justify-self: end;
+    	margin-right: 3vh;
+
+	}
+
+
+
+
+
+
 	.header {
 		margin-bottom: -5vh;
 	}
