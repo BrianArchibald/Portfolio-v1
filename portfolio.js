@@ -92,41 +92,56 @@ window.addEventListener('scroll', debounce(checkSlide));
 
 
 /*  Mobile Navigation  */
-
-const mobileNav = document.getElementById('menu-icon');
-const mobileNavX = 
-const navList = 
-
-
-function changeMobileNav() {
-	console.log("nav clicked");
-
-	//add and remove class to show icon or show nav options,
-	element.style.display = none;
-	element.style.display = block;
-	// then show x when nav is clicked
-	x.style.display = inline-block;
-	mobileNav.style.display = none;
-	// then when x is clicked show nav again.
-}
+// const mobileNav = document.getElementById('menu-icon');
+// const mobileNavX = 
+// const navList = 
 
 
-mobileNav.addEventListener('click', changeMobileNav);
+// function changeMobileNav() {
+// 	console.log("nav clicked");
+
+// 	//add and remove class to show icon or show nav options,
+// 	element.style.display = none;
+// 	element.style.display = block;
+// 	// then show x when nav is clicked
+// 	x.style.display = inline-block;
+// 	mobileNav.style.display = none;
+// 	// then when x is clicked show nav again.
+// }
 
 
-/*
-$('.js--nav-icon').click(function() {
-	var nav = $('.js--main-nav');
-	var icon = $('.js--nav-icon');
+// mobileNav.addEventListener('click', changeMobileNav);
+
+
+
+
+$('.mobile-nav-icon').click(function() {
+	const nav = $('.nav-list');
+	const icon = $('.mobile-nav-icon i');
 
 	nav.slideToggle(200)
 
-	if(icon.hasClass('ion-navicon-round')) {
-		icon.addClass('ion-close-round');
-		icon.removeClass('ion-navicon-round');
+	if(icon.hasClass('fa-bars')) {
+		icon.addClass('fa-times');
+		icon.removeClass('fa-bars');
 	} else {
-		icon.removeClass('ion-close-round');
-		icon.addClass('ion-navicon-round');
+		icon.removeClass('fa-times');
+		icon.addClass('fa-bars');
 	}
 });
-*/
+///////////
+
+// $('.js--nav-icon').click(function() {
+// 	var nav = $('.js--main-nav');
+// 	var icon = $('.js--nav-icon');
+
+// 	nav.slideToggle(200)
+
+// 	if(icon.hasClass('ion-navicon-round')) {
+// 		icon.addClass('ion-close-round');
+// 		icon.removeClass('ion-navicon-round');
+// 	} else {
+// 		icon.removeClass('ion-close-round');
+// 		icon.addClass('ion-navicon-round');
+// 	}
+// });

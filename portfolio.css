@@ -85,6 +85,11 @@ a {
 
 .mobile-nav-icon {
 	display: none;
+	justify-self: end;
+}
+
+.mobile-nav-icon i {
+	color: white;
 }
 
 
@@ -166,6 +171,7 @@ a {
 
 .mobile-nav-icon {
 	cursor: pointer;
+	display: none;
 	
 }
 
@@ -858,7 +864,7 @@ h3 {
 
 	.nav-list {
 
-		display: block;
+		display: none;
 		padding-top: 2vh;
     	margin-top: 0;
 		/*
@@ -915,7 +921,7 @@ h3 {
 
 	.nav-sticky-v2 .nav-list {
 
-		display: block;
+		display: none;
 		padding-top: 2vh;
     	margin-top: 0;
 		/*
