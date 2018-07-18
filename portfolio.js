@@ -2,6 +2,30 @@ const nav = document.querySelector('.nav-sticky');
 const socialContainer = document.querySelector('#socialContainer');
 const navTop = nav.offsetTop;
 
+const mobileNavIcon = document.querySelector('#menu-icon');
+const mobileNavList = document.querySelector('#mobile-nav');
+const closeMenu = document.querySelector('#close-menu');
+
+//var closeMenu = document.getElementsByClassName('close-menu');
+
+function changeMobileNav() {
+	if (nav.style.display != "none") {
+		mobileNavIcon.style.display = "none";
+		nav.style.display = "none";
+		mobileNavList.style.display = "block";
+	} else {
+		mobileNavIcon.style.display = "inline-block";
+		nav.style.display = "grid";
+		mobileNavList.style.display = "none";
+	}
+}
+mobileNavIcon.addEventListener('click', changeMobileNav);
+closeMenu.addEventListener('click', changeMobileNav);
+
+
+
+
+
 // function scrolledNav () {
 
 
@@ -114,34 +138,7 @@ window.addEventListener('scroll', debounce(checkSlide));
 
 
 
+////  jquery menu toggle
+// 
 
-$('.mobile-nav-icon').click(function() {
-	const nav = $('.nav-list');
-	const icon = $('.mobile-nav-icon i');
 
-	nav.slideToggle(200)
-
-	if(icon.hasClass('fa-bars')) {
-		icon.addClass('fa-times');
-		icon.removeClass('fa-bars');
-	} else {
-		icon.removeClass('fa-times');
-		icon.addClass('fa-bars');
-	}
-});
-///////////
-
-// $('.js--nav-icon').click(function() {
-// 	var nav = $('.js--main-nav');
-// 	var icon = $('.js--nav-icon');
-
-// 	nav.slideToggle(200)
-
-// 	if(icon.hasClass('ion-navicon-round')) {
-// 		icon.addClass('ion-close-round');
-// 		icon.removeClass('ion-navicon-round');
-// 	} else {
-// 		icon.removeClass('ion-close-round');
-// 		icon.addClass('ion-navicon-round');
-// 	}
-// });
