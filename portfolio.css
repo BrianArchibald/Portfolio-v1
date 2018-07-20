@@ -836,7 +836,7 @@ h3 {
 		font-size: 2em;
 	}
 	.section-header {
-		font-size: 1.7em;
+		font-size: 2.2em;
 	}
 	.skills-section {
 		padding-top: 22vh;
@@ -870,6 +870,10 @@ h3 {
 	}
 	.about-section {
 		padding: 2vh;
+	}
+	#about-header {
+		margin-bottom: 1vh;
+		padding-top: 7vh;
 	}
 }
 
