@@ -112,33 +112,3 @@ function checkSlide() {
 	}
 
 window.addEventListener('scroll', debounce(checkSlide));
-
-
-
-/*  Mobile Navigation  */
-// const mobileNav = document.getElementById('menu-icon');
-// const mobileNavX = 
-// const navList = 
-
-
-// function changeMobileNav() {
-// 	console.log("nav clicked");
-
-// 	//add and remove class to show icon or show nav options,
-// 	element.style.display = none;
-// 	element.style.display = block;
-// 	// then show x when nav is clicked
-// 	x.style.display = inline-block;
-// 	mobileNav.style.display = none;
-// 	// then when x is clicked show nav again.
-// }
-
-
-// mobileNav.addEventListener('click', changeMobileNav);
-
-
-
-////  jquery menu toggle
-// 
-
-
