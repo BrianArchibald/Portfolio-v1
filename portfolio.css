@@ -429,11 +429,13 @@ h3 {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	margin: 0;
 }
 .form-container {
 	display: grid;
 	grid-template-rows: 1fr;
-	justify-content: center;	
+	justify-content: center;
+	margin: 10vh;	
 }
 .form-text {
 	color: white;
@@ -473,8 +475,7 @@ button {
     display: inline-block;
     font-size: 16px;
     margin-bottom: 30px;
-    box-shadow: 0 8px 16px 0 rgba(184, 185, 186,0.2), 0 6px 20px 0 rgba(184, 185, 186,0.19);
-}
+   }
 button:hover {
 	box-shadow: 0 12px 16px 0 rgba(184, 185, 186,0.24), 0 17px 50px 0 rgba(184, 185, 186,0.19);
 	background-color: #ff0037;
@@ -846,7 +847,7 @@ button:hover {
 	.nav-sticky-v2 {
 		padding-top: 0;
 		margin-top: 0 !important;
-		max-height: 12vw;
+		max-height: 15vh;
 	}
 	.nav-sticky-v2 .navLogo {
 		margin-left: 0;
@@ -969,7 +970,7 @@ button:hover {
 		margin-right: 0;
 		padding-top: 0;
 		margin-top: 0 !important;
-		max-height: 12vw;
+		max-height: 15vh;
 	}
 	.nav-sticky-v2 .navLogo {
 		margin-left: 0;
