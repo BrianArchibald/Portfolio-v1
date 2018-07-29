@@ -8,12 +8,85 @@
   <title>Contact Form</title>
 </head>
 <body class="form-body">
+
+<nav class="nav-sticky" id="navSticky">
+          <div class="navLogo">
+            <a>
+              <img src="logo2.png">
+            </a>
+          </div>
+          <div class="navList">
+            <ul class="nav-list"> 
+              <li>
+                <a class="nav-active" href="#skills-section">
+                  <div class="nav-list-items">Skills</div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-active" href="#project-section">
+                  <div class="nav-list-items">Portfolio</div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-active" href="#other-section">
+                  <div class="nav-list-items">Projects</div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-active" href="#about-section">
+                  <div class="nav-list-items">About</div>
+                </a>
+              </li>
+            </ul> 
+          </div>
+          <a class="mobile-nav-icon">
+              <i class="fa fa-bars" id="menu-icon" aria-hidden="true"></i> 
+          </a>
+        </nav>    <!--     End of Nav Bar     -->
+
+        <nav class="mobile-nav" id="mobile-nav">
+          <div class="mobile-menu" id="close-menu">
+            <ul class="mobile-list" id="mobile-list">
+              <li>
+                <a class="nav-active">
+                  <div class="nav-list-mobile" class="close-menu">Close Menu</div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-active" href="index.html">
+                  <div class="nav-list-mobile" class="close-menu">Skills</div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-active" href="#project-section">
+                  <div class="nav-list-mobile" class="close-menu">Portfolio</div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-active" href="#other-section">
+                  <div class="nav-list-mobile" class="close-menu">Projects</div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-active" href="#about-section">
+                  <div class="nav-list-mobile" class="close-menu">About</div>
+                </a>
+              </li>
+              <li>
+                <a class="nav-active" href="form.html">
+                  <div class="nav-list-mobile" id="mobile-contact" class="close-menu">Contact</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
   <div class="form-container">
-    <h2 class="content-head form-title is-center">Contact Me!</h2>
+    <h2 class="content-head form-title is-center" id="contact-form-title">Contact Me!</h2>
       <aside>
-           <p class="form-text">
+           <p class="form-text" id="contact-form-text">
                I would <em>love</em> to hear from you! </p>
-               <p class="form-text">Please use the <b><em>Contact Form</em></b>
+               <p class="form-text" id="contact-form-add-text">Please use the <b><em>Contact Form</em></b>
                to email me at </br></br>BrianAllenArchibald@gmail.com.
            </p>
        </aside>
@@ -71,8 +144,9 @@
         </div>
        
       </footer>
-  <script data-cfasync="false" type="text/javascript"
+  
+</body>
+<script data-cfasync="false" type="text/javascript"
   src="form-submission-handler.js"></script>
 
-</body>
 </html>

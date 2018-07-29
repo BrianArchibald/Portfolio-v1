@@ -86,6 +86,9 @@
       xhr.onreadystatechange = function() {
           console.log( xhr.status, xhr.statusText )
           console.log(xhr.responseText);
+          document.getElementById("contact-form-title").style.display = "none";
+          document.getElementById("contact-form-text").style.display = "none";
+          document.getElementById("contact-form-add-text").style.display = "none";
           document.getElementById("gform").style.display = "none"; // hide form
           var thankYouMessage = document.getElementById("thankyou_message");
           if (thankYouMessage) {
