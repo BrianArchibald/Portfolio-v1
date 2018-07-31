@@ -570,6 +570,9 @@ button:hover {
 		padding: .5em 1em;
 		font-size: 1.5em;
 	}
+	.form-body .nav-sticky {
+		margin-top: 0;
+	}
 	.header {
 		margin-bottom: -5vh;
 	}
@@ -989,6 +992,9 @@ button:hover {
 	.project img {
 		height: 25vh;
 		width: 25vh;
+	}
+	#message {
+		max-width: 25vh;
 	}
 
 	@media (max-width: 208px) {
