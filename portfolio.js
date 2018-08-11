@@ -1,12 +1,9 @@
 const nav = document.querySelector('.nav-sticky');
 const socialContainer = document.querySelector('#socialContainer');
 const navTop = nav.offsetTop;
-
 const mobileNavIcon = document.querySelector('#menu-icon');
 const mobileNavList = document.querySelector('#mobile-nav');
 const closeMenu = document.querySelector('#close-menu');
-
-//var closeMenu = document.getElementsByClassName('close-menu');
 
 function changeMobileNav() {
 	if (nav.style.display != "none") {
@@ -22,45 +19,6 @@ function changeMobileNav() {
 mobileNavIcon.addEventListener('click', changeMobileNav);
 closeMenu.addEventListener('click', changeMobileNav);
 
-
-
-
-
-// function scrolledNav () {
-
-
-// }
-
-// window.addEventListener('scroll', stickyElement);
-
-	// console.log(socialContainer.scrollTop);
-	// if (socialContainer.scrollTop > 0) {
-	// 	document.getElementById("navSticky").classList.add("nav-sticky-v2");
-	// } else {
-	// 	document.getElementById("navSticky").classList.remove("nav-sticky-v2");
-	// 	}
-	// }
-
-	//   console.log('navTop = ' + navTop);
-	//   console.log('scrollY = ' + window.scrollY);
-
-
-
-
-	// 	if (window.scrollY > 800) {
-	// 		//if (window.scrollY > 0)
-	// 		document.getElementById("navSticky").classList.add("nav-sticky-v2");
-	// 	}
-	// 	else {
-	// 		document.getElementById("navSticky").classList.remove("nav-sticky-v2");
-	// 	}
-	// }
-
-//window.addEventListener('scroll', scrolledNav);
-
-
-
-
 function stickyElement(e) {
   
   var header = document.querySelector('.header');
@@ -72,12 +30,10 @@ function stickyElement(e) {
     navbar.classList.add('nav-sticky-v2');
     
   } else if (scrollValue < headerHeight) {
-    navbar.classList.remove('nav-sticky-v2');
-    
+    navbar.classList.remove('nav-sticky-v2'); 
   }
 }
   window.addEventListener('scroll', stickyElement);
-
 
 // will run checkSlide every 20ms so checkSlide is not running constantly
 function debounce(func, wait = 20, immediate = true) {
