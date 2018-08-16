@@ -129,7 +129,7 @@ a {
 	display: none;	
 }
 #menu-icon {
-	font-size: 3vh;
+	font-size: 3.5vh;
 }
 
 /*    Mobile Nav Pop Up */
@@ -443,6 +443,7 @@ h3 {
 	grid-template-rows: 1fr;
 	justify-content: center;
 	margin: 10vh;
+	padding: 0 1vh;
 }
 .form-text {
 	color: white;
@@ -941,6 +942,8 @@ button:hover {
 		margin-bottom: 1vh;
 		padding-top: 7vh;
 	}
+	#message {
+	max-width: 35vh;
 }
 
 @media (max-width: 360px)  {
