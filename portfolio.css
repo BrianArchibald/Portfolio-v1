@@ -342,6 +342,7 @@ h3 {
 }
 .ind-project p {
 	padding: 0 8%;
+	text-align: center;
 }
 .project-img-container p {
 	text-align: center;
@@ -452,7 +453,7 @@ h3 {
 	display: grid;
 	grid-template-rows: 1fr;
 	color: white;
-	padding:0 2vh;
+	padding:2vh 2vh;
 }
 .form-title {
 	font-size: 28px;
