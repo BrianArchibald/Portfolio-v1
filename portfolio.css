@@ -10,8 +10,7 @@ body {
     font-size: 10px;
     font-style: normal;
     font-family: FontAwesome;
-    text-rendering: auto;
-    
+    text-rendering: auto;   
 }
 h1 {
 	font-size: 2em;
@@ -84,7 +83,6 @@ a {
 }
 .nav-sticky-v2 a {
 	color: white;
-
 }
 .nav-sticky-v2 a:hover {
 	box-shadow: 0 2px #4d243d;
@@ -116,10 +114,13 @@ a {
 .nav-sticky-v2 .navLogo img {
 	height: 1em;
 	width: 3em;
-
 }
 .nav-active {
 	text-decoration: none;
+}
+.contact-form .nav-sticky {
+	position: fixed;
+	background-color: #010101;
 }
 
 /*  Mobile Nav Icon   */
@@ -129,7 +130,7 @@ a {
 	display: none;	
 }
 #menu-icon {
-	font-size: 3.5vh;
+	font-size: 4vh;
 }
 
 /*    Mobile Nav Pop Up */
@@ -207,6 +208,10 @@ a {
 }
 .social {
 	font-size: 2em;
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 .learn-more {
 	font-size: 1.2em;
@@ -234,6 +239,9 @@ h3 {
 .social a {
 	text-decoration: none;
 }
+.fa-envelope {
+	align-self: center;
+}
 
 /* Skills Section  */
 
@@ -250,7 +258,6 @@ h3 {
 	font-size: 2.5em;
 	padding: .2em;
 	text-align: center;
-
 }
 #section-header-skills {
 	color: black;
@@ -278,12 +285,7 @@ h3 {
     width: 5em;
     padding: .5em .5em;
     font-weight: 700;
-    max-width: 200px;
-    
-}
-.firebase {
-	font-size: 3vh;
-	align-self: center;
+    max-width: 200px;   
 }
 .slideUp {
 	opacity: 0;
@@ -415,6 +417,7 @@ h3 {
 }
 
 /* ---   Footer --- */
+
 .footer {
 	background-color: #333333;
 	padding-top: 1em;
@@ -768,6 +771,9 @@ button:hover {
 	.fab {
 		font-size: 1.6em;
 	}
+	.fa-envelope {
+		margin-top: 1vh;
+	}
 	.section-header {
 		font-size: 2.7em;
 	}
@@ -963,8 +969,8 @@ button:hover {
 		margin-left: 0;
 	}
 	.navLogo img {
-		height: 1.3em;
-		width: 3.3em;
+		height: 1em;
+		width: 3em;
 	}
 	.nav-list {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1000,8 +1006,17 @@ button:hover {
 		max-width: 25vh;
 	}
 
-	@media (max-width: 208px) {
-		.project img {
-			display: none;
-		}
+@media (max-width: 360px)  {
+	.header-main-text {
+	font-size: 2em;
 	}
+	.header-additional-text {
+	font-size: 1.2em;
+	}
+}
+
+@media (max-width: 208px) {
+	.project img {
+		display: none;
+	}
+}
