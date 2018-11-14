@@ -5,6 +5,9 @@
 body {
 	margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 .fa {
 	display: inline-block;
     font-size: 10px;
@@ -298,6 +301,9 @@ h3 {
 .activeSkills {
 	opacity: 1;
 	transform:translateY(0%) scale(1);
+}
+.skills-img {
+	width: 3.2rem;
 }
 
 /* --  Projects Section  --  */
