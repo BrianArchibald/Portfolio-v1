@@ -34,7 +34,6 @@ a {
 	grid-template-columns: 2fr 1fr;
 	top: 0;
 	padding: .5em 0;
-	padding
 	margin: 0;
 	z-index: 100;
 	width: 100%;
@@ -414,7 +413,7 @@ h3 {
 .about-section img {
 	align-self: center;
 	justify-self: center;
-	width: 30%;
+	width: 23%;
 	height: auto;
 }
 .summary {
@@ -508,6 +507,11 @@ button:hover {
 	}	
 }
 
+@media (max-width: 1054px) {
+	.about-section img {
+    	width: 25%;
+}
+
 @media (max-width: 1023px) {  /*iPad in landscape mode has 1024px */
 	.nav-list li {
 		padding: 0 1em;
@@ -520,7 +524,7 @@ button:hover {
 		padding: 5vh;
 	}
 	.summary {
-		font-size: 1.2em;
+		font-size: 16px;
 	}
 	.projects-container {
 		grid-gap: 0;
@@ -562,6 +566,10 @@ button:hover {
 	.skills {
 		font-size: 5.5em;
 	}
+	.about-section {
+    	display: grid;
+    	grid-template-rows: .1fr 1fr .5fr;
+    }
 }
 
 @media (max-width: 726px) { /* phones smaller than iPad (max-width: 650px)  */
@@ -707,7 +715,7 @@ button:hover {
 		grid-template-columns: 1fr;
 	}
 	.project-img-container {
-		height: 80vw;
+		height: 39vw;
 	}
 	.project-img-container h1{
 		font-size: 4em;
@@ -728,7 +736,7 @@ button:hover {
 		padding: 2vh;
 	}
 	.about-section img {
-		width: 67%;
+		width: 49%;
 	}
 }	
 
